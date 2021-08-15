@@ -8,9 +8,8 @@ const router = require('./routes/index')
 const errorHandlerMiddleware = require('./middlewares/ErrorHandlingMiddleware')
 const filePathMiddleware = require('./middlewares/filePathMiddleware')
 const path = require('path')
-const { config } = require('dotenv')
 
-const PORT = process.env.PORT || config.get('serverPort')
+const PORT = process.env.PORT || 5000
 
 const app = express()
 
