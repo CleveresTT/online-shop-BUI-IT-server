@@ -8,6 +8,7 @@ const errorHandlerMiddleware = require('./middlewares/ErrorHandlingMiddleware')
 const filePathMiddleware = require('./middlewares/filePathMiddleware')
 const path = require('path')
 const config = require('config')
+const models = require('./models/models')
 
 const PORT = config.get("port") || 5000
 
